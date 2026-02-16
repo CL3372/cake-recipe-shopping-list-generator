@@ -1,0 +1,123 @@
+body {
+  color: rgb(9, 9, 9);
+  background-color: rgb(240, 216, 185);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: rgb(243, 117, 117);
+  font-weight: 500px;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: rgb(231, 187, 129);
+  box-shadow: 0px 60px 60px 0px rgba(65, 50, 100, 0.1);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5px;
+  font-size: 15px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.instructions {
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 20px;
+}
+
+.submit-button {
+  width: 20%;
+  margin-left: 10px;
+  background-color: rgb(243, 117, 117);
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.recipe strong {
+  color: rgb(243, 117, 117);
+}
+
+.recipe {
+  background-color: rgb(231, 187, 129);
+  width: 80%;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 80px;
+  margin: auto;
+  border-left: 5px solid rgb(243, 117, 117);
+  border-right: 5px solid rgb(243, 117, 117);
+  box-sizing: border-box;
+  box-shadow:
+    0px,
+    60px,
+    60px,
+    0px rgb(65, 50, 100, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#shopping-list {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.shopping-list-item {
+  margin: 5px 0;
+  list-style-type: none;
+}

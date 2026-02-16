@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>AI recipe generator</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <header>
+      <h1>🍰 Welcome to the Dessert recipe generator 🍰</h1>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form id="recipe-generator-form">
+          <input
+            type="text"
+            placeholder="Choose your dessert..."
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e: Bolos, doces...</div>
+      </div>
+      <div class="recipe hidden" id="recipe"></div>
+
+      <div class="shopping-list" id="shopping-list"></div>
+    </main>
+    <footer>
+      This project was coded by
+      <a
+        href="https://www.shecodes.io/graduates/175808-carla-louro"
+        target="_blank"
+        >Carla Louro</a
+      >
+      and is open-sourced
+      <a href="https://github.com/CL3372/cake-recipe-generator" target="_blank">
+        on Github</a
+      >
+      and is hosted on
+      <a href="https://cake-recipe-generator.vercel.app/" target="_blank">
+        Vercel</a
+      >
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
