@@ -86,6 +86,115 @@ form {
     0px rgb(65, 50, 100, 0.1);
 }
 
+.shopping-list {
+  padding: 30px;
+  background-color: rgb(231, 187, 129);
+  box-shadow: 0px 60px 60px 0px rgba(65, 50, 100, 0.1);
+  border-radius: 15px;
+  margin: 40px auto 0;
+  width: 80%;
+  box-sizing: border-box;
+  border-left: 5px solid rgb(243, 117, 117);
+  border-right: 5px solid rgb(243, 117, 117);
+}
+
+.shopping-list h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: rgb(243, 117, 117);
+}
+
+.shopping-list #shopping-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.shopping-list #shopping-input {
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.shopping-list #shopping-form button {
+  width: 20%;
+  background-color: rgb(243, 117, 117);
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.shopping-list #clear-shopping {
+  background-color: rgba(243, 117, 117, 0.85);
+}
+
+.shopping-list #shopping-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-list #shopping-items li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.shopping-list #shopping-items input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(243, 117, 117);
+  cursor: pointer;
+}
+
+.shopping-list #shopping-items span {
+  font-size: 18px;
+}
+
+.shopping-list #shopping-items li.done span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.shopping-list .shopping-delete {
+  margin-left: auto;
+  background-color: transparent;
+  color: rgb(243, 117, 117);
+  border: 2px solid rgb(243, 117, 117);
+  border-radius: 15px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.shopping-list .shopping-delete:hover {
+  background-color: rgb(243, 117, 117);
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .shopping-list {
+    width: 100%;
+  }
+
+   .shopping-list #shopping-form {
+    flex-direction: column;
+  }
+
+  .shopping-list #shopping-input,
+  .shopping-list #shopping-form button {
+    width: 100%;
+  }
+
 footer {
   text-align: center;
   margin-top: 30px;
@@ -105,19 +214,4 @@ footer {
   to {
     visibility: hidden;
   }
-}
-
-#shopping-list {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-}
-
-.shopping-list-item {
-  margin: 5px 0;
-  list-style-type: none;
 }

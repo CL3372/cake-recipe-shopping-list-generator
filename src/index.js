@@ -33,3 +33,13 @@ let recipeElement = document.querySelector("#recipe");
 
 let recipeFormElement = document.querySelector("#recipe-generator-form");
 recipeFormElement.addEventListener("submit", generateRecipe);
+
+function displayRecipe(response) {
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.innerHTML = response.data.answer;
+
+  ensureShoppingVisible();
+  addRecipeIngredientsToShoppingList(response.data.answer);
+}
+
+document.querySelector("#shopping-list").innerHTML = "<h2>Shopping List</h2>";

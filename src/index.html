@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>AI Recipe and Shopping List Generator</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <header>
+      <h1>🍰 Welcome to Dessert Recipe and Shopping List Generator 🛍️</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="recipe-generator-form">
+          <input
+            type="text"
+            placeholder="Choose your dessert.."
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div id="hint">i.e: Bolos, doces...</div>
+      </div>
+      <div class="recipe hidden" id="" recipe></div>
+      <section id="shopping-list" class="hidden">
+        <h2>Shopping List</h2>
+
+        <form id="shopping-form">
+          <input
+            id="shopping-input"
+            type="text"
+            placeholder="Add ingredient (e.g., flour)"
+          />
+          <button type="submit">Add</button>
+          <button type="button" id="clear-shopping">Clear</button>
+        </form>
+
+        <ul id="shopping-items"></ul>
+      </section>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>
