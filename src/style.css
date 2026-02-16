@@ -195,12 +195,6 @@ form {
     width: 100%;
   }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 15px;
-}
-
 .generating {
   animation: blink-animation 1s steps(5, start) infinite;
 }
@@ -214,4 +208,11 @@ footer {
   to {
     visibility: hidden;
   }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+opacity: 0.8px;
 }
